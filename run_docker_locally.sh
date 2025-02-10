@@ -44,7 +44,7 @@ echo "Running the container"
 #    $IMAGE_NAME 
 
 #docker run -it --gpus all  \
-docker run -it --gpus '"device=0"' \
+docker run -it --gpus all \
     --name $CONTAINER_NAME \
     --memory=550g \
     --memory-swap=550g \
