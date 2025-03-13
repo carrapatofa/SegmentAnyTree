@@ -46,8 +46,8 @@ echo "Running the container"
 #docker run -it --gpus all  \
 docker run -it --gpus all \
     --name $CONTAINER_NAME \
-    --memory=550g \
-    --memory-swap=550g \
+    --memory=150g \
+    --memory-swap=150g \
     --mount type=bind,source=$SOURCE_PATH_1,target=/home/nibio/mutable-outside-world/bucket_in_folder \
     --mount type=bind,source=$SOURCE_PATH_2,target=/home/nibio/mutable-outside-world/bucket_out_folder \
     $IMAGE_NAME
